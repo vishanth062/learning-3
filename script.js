@@ -87,7 +87,7 @@ contact_form.addEventListener('click',()=>{
     main.remove()
 
    document.querySelector("body").style.backgroundColor="#F7F3F0"
-   footer.style.display='none'
+//    footer.style.display='none'
 
    document.querySelector(".head-upper01 p").textContent="Custom Enquiry"
 
