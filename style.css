@@ -1,0 +1,211 @@
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows:178px 1fr;
+    grid-template-areas:
+    "head"
+    "main";
+}
+
+.head{
+   grid-area: head;
+   display: grid;
+   grid-template-rows: repeat(auto-fit,minmax(1fr,1fr));
+
+}
+
+.head-upper{
+    background-color:#05233B;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.head-upper1{
+    display:grid;
+    gap: 1px;
+    grid-template-columns: repeat(4,minmax(30px,1fr));
+    color: white;
+    padding: 10px;
+}
+
+
+.head-upper01{
+    background: linear-gradient(to right,#000A13 ,#052138 ) ;
+    color: white;
+   
+}
+
+.nav-button{
+    display: flex;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #05233B;
+    margin-right: 40px;
+    border-radius: 4px;
+    font: size 16px;
+    font-family: "Outfit", sans-serif;
+}
+
+.nav-button:hover{
+    background-color: #2D4F66;
+}
+
+.img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.main{
+    grid-area: main;
+    background-color:#F7F3F0;
+    display: grid;
+    grid-template-rows:repeat(auto-fit,minmax(100px
+,1fr)) ;
+}
+
+.main-text{
+    background-image: linear-gradient(to bottom, #FF8000, #FFB923); /* Define gradient colors */
+    -webkit-background-clip: text; /* Apply text as background clip */
+    background-clip: text; /* Apply text as background clip */
+    color: transparent; 
+    font-size: 35px;
+    font-weight: 60px;
+    font:bold;
+}
+
+.main-text1{
+    color: #2D4F66;
+    font-size: 16px;
+    font-family: 'outfit',regular;
+    text-align: center;
+}
+
+.main-sub {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 11px;
+    font-size: initial;
+    font: initial;
+    text-align:initial;
+    padding: 0;
+    margin: 0px;
+     /* Optional: Add gap between grid items */
+
+}
+.cards{
+    background:linear-gradient(to bottom,#FFFFFF,#ECECEB);
+padding: 10px;
+    border-radius: 12px;
+}
+
+.card-button{
+    width: 246px;
+    height: 48px;
+    border-radius: 4px;
+    color: white;
+    background-color: #FFB923;
+    border: none;
+    justify-content: center;
+}
+
+
+
+
+.card-inner{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(100px,1fr));
+    background-color:#F0F4F7 ;
+    text-align: center;
+    height: auto;
+    width: auto;
+    overflow:auto;
+    border-radius: 12px;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#visible-button,#visible-button2,#visible-button1{
+    border: none;
+    color: #FFB923;
+    background: none;
+}
+
+
+#visible-button,#visible-button2,#visible-button1:hover
+{
+    cursor:pointer;
+}
+
+.card-button:hover{
+    cursor:pointer;
+}
+
+
+
+footer{
+    background:#F8EDDB;
+    position: fixed;
+    width: 100%;
+    z-index: 22px;
+    bottom: 0;
+
+    display: flex;
+    justify-content:space-between
+}
+
+
+#overlay{
+    width:100%;
+    height: 100%;
+    background-color: #111138;
+    opacity:60%;
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:999;
+    display:none;
+}
+
+
+#form {
+   
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    display: none;
+    flex-direction: column;
+    padding: 46px;
+    width: 700px;
+    height: 500px;
+    background: #FFFFFF;
+    opacity: 1;
+    transition: 2ms ease-in-out;
+    border-radius:12px ;
+
+    font-size: 15px;
+    font-style: bold;
+    font-weight:bold;
+    font-style: outfit;
+}
+
+
+.form-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    background:#E4E9F2 ;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
